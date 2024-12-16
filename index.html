@@ -8,6 +8,11 @@
         body {
             background-color: #ffffff; /* 設定頁面背景顏色 */
             font-family: 'Times New Roman', Times, serif; /* 設定字體 */
+            margin: 0; /* 移除預設邊距 */
+            height: 100vh; /* 讓 body 佔滿整個視窗高度 */
+            display: flex; /* 啟用 Flexbox */
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
         }
         h1 {
             color: #000000; /* 設定標題文字顏色 */
@@ -21,14 +26,17 @@
             text-align: justify;
             line-height: 1.4;
         }
+
       .center-box {
-        width: 30%; /* 設定寬度為60% */
-        height: 30%; /* 自動調整高度 */
-        margin: 20px; /* 讓它置中 */
-        padding: 10px; /* 增加內邊距 */
-        border: 1px solid #ccc; /* 增加邊框讓它更明顯 */
-        box-sizing: border-box; /* 包含內邊距和邊框在寬度內 */
-        }
+        width: 60%; /* 設定寬度 */
+        max-width: 600px; /* 最大寬度 */
+        padding: 20px;
+        text-align: center; /* 內容文字置中 */
+        border: 1px solid #ccc; /* 邊框增加可視效果 */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+        background-color: #f9f9f9; /* 背景色 */
+        border-radius: 10px; /* 圓角邊框 */
+      }
     </style>
 </head>
 <body>
