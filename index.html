@@ -27,20 +27,29 @@
             line-height: 1.4;
         }
 
-      .center-box {
-            max-width: 600px; /* 最大寬度 */
-            height: 200px; /* 設定長度 */
-            padding: 20px;
-            text-align: center; /* 內容文字置中 */
-            border: 1px solid #ccc; /* 邊框增加可視效果 */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+      .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+    .item {
+            width: 48%; /* 或者根據需要調整 */
+            height: 200px; /* 設定固定高度，或根據實際內容調整 */
             background-color: #f9f9f9; /* 背景色 */
-            border-radius: 30px; /* 圓角邊框 */
-      }
+            margin-bottom: 20px; /* 設定元素間距 */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+        }
+
+    /* 確保最後一行的元素佔滿整行 */
+    .item:nth-last-child(-n+2) {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
-    <img src="profile.jpg" alt="personal image" width="195" height="205" style="position: absolute; top: 160px; right: 120px;">
+    <img src="profile.jpg" alt="personal image" width="195" height="205" style="position: absolute; top: 155px; right: 120px;">
     <h1 style="position: absolute; top: -30px; right: 525px;">QuirkWorks</h1>
 
 
@@ -61,11 +70,11 @@
     <a href="https://github.com/ArinaChen?tab=projects"> 
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="23" height="23" style="position: absolute; top:108px; right: 650px;"></img >
     </a>
-    <! American life>
-    <div class="center-box">
-        <a href="#">主題一</a>
-          <p>點擊查看更多信息。</p>
-    </div>
+    <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
 
     <p style="position: absolute; top: 350px; right: 125px;"> <strong>Hello, Welcome to my blog!</strong></p>
         <p style="position: absolute; top: 380px; right: 80px;">
