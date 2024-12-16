@@ -26,29 +26,42 @@
             text-align: justify;
             line-height: 1.4;
         }
+        
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /* 或根據需要調整 */
+            max-width: 1200px; /* 限制最大寬度 */
+        }
 
-      .container {
+        .container {
+            flex: 3; /* 占用更多的空間 */
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
+            justify-content: flex-start;
+            margin-right: 20px; /* 右邊間隔 */
         }
 
-      .item {
-            width: 400px; /* 或者根據需要調整 */
-            height: 250px; /* 設定固定高度，或根據實際內容調整 */
-            background-color: #FFB6C1; /* 背景色 */
-            margin-bottom: 50px; /* 增加下方的外邊距 */
-            margin-right: 2%; /* 為右邊的元素添加外邊距，除最右側外 */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影 */
-        }
-    /* 確保每行的最後一個元素不添加右邊的 margin */
-    .item:nth-child(2n) {
-            margin-right: 0;
+        .profile-info {
+            flex: 1; /* 占用較少的空間 */
+            padding: 10px;
+            border: 1px solid #ccc; /* 可視化邊框 */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-    /* 確保最後一行的元素佔滿整行 */
-    .item:nth-last-child(-n+2) {
+        .item {
+            width: 48%;
+            height: 200px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item:nth-child(2n) {
+            margin-right: 4%; /* 每行第二個元素右邊距 */
+        }
+
+        .item:nth-last-child(-n+2) {
             width: 100%;
         }
 
