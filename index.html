@@ -64,11 +64,6 @@
             position: absolute;
             top: 50%;  /* Adjusted for centering */
             left: 50%; /* Adjusted for centering */
-            transform: translate(-50%, -50%); /* New addition for centering */
-            display: flex;
-            align-items: center; /* Vertical centering */
-            justify-content: center; /* Horizontal centering */
-            text-align: center; /* Text centering */
         }
         .web_image{
             width: 400px;
@@ -78,7 +73,11 @@
         }
         .web_words {
             font-size: 25px;
-            text-align: center;
+            text-align: center;  /* 确保文字水平居中 */
+            width: 100%;  /* 确保文字容器宽度与其父容器相同 */
+            position: absolute;  /* 使用绝对定位来居中文字 */
+            transform: translateY(-50%);  /* 精确调整到正中心 */
+            left: 0;  /* 从最左边开始 */
     </style>
 </head>
 <body>
