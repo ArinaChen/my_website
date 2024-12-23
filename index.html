@@ -26,55 +26,56 @@
             text-align: justify;
             line-height: 1.4;
         }
-        .profile-info {
-            flex-direction: column; /* 垂直堆疊元素 */
-            align-items: center; /* 水平居中所有子元素 */
-            text-align: center; /* 文字居中 */
-            padding: 20px;
+        .profile-info{
             border: 1px solid #ccc;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            position: absolute;
+            top: 180px;
+            right: 120px;
         }
-        .main-content {
-            justify-content: space-between;
-            width: 100%; /* 或根據需要調整 */
-            max-width: 1200px; /* 限制最大寬度 */
+        .item_American_Life{
+            width:400px; 
+            height: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            position: absolute;
+            top: 180px;
+            left: 120px;
         }
-
-        .container {
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: center; /* 確保方框內部元素垂直居中 */
-            margin-right: 20px; /* 右邊間隔 */
-            margin-top: 10px; /* 新增這行，根據需要調整間距 */
+        .item_movie{
+            width:400px; 
+            height: 300px;
+            border: 1px solid #ccc;
+            background-color: #9ea2ab;
+            border-radius: 10px;
+            position: absolute;
+            top: 180px;
+            left: 600px;
         }
-        .item {
-            flex: 1; /* 平均分配空間 */
-            width: auto;
-            height: 150px; /* 控制高度 */
-            background-color: #f2f2f2;
-            margin: 10px;
-            transition: background 0.3s ease;
+        .item_movie:hover{
+            background: color #ffcc71;
         }
-        .item-link {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 20px;
-            background-color: #f9f9f9;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        .item_American_job{
+            width: 900px; 
+            height: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            position: absolute;
+            top: 550px;
+            left: 120px;
         }
-        .item-link:hover {
-            background-color: #ddd; /* 滑鼠懸停時背景變為較深的灰色 (#ddd) */
+        .web_image{
+            width: 400px;
+            height : 250px;
+            border-radius: 8px;
         }
-
-        .item:nth-child(2n) {
-            margin-right: 4%; /* 每行第二個元素右邊距 */
+        .web_words {
+            font-size: 18px;
+            text-align: center;
         }
-
-        .item:nth-last-child(-n+2) {
-            width: 100%;
-        }
-
     </style>
 </head>
 <body>
@@ -99,34 +100,42 @@
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="23" height="23" style="position: absolute; top:108px; right: 650px;"></img >
     </a>
 
-    <div class="main-content">
-        <div class="container">
-            <a href="page1.html" class="item-link">
-            <div class="item"></div>
+    <div class="item_American_Life">
+        <a href="page1.html">
+            <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img >
+            <p class="web_words">American Life</p>
         </a>
-        <div class="container">
-            <a href="page1.html" class="item-link">
-            <div class="item"></div>
+    </div>
+    <div class="item_movie">
+        <a href="page1.html">
+            <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img >
+            <p class="web_words">Movie</p>
         </a>
-        <div class="container">
-            <a href="page1.html" class="item-link">
-            <div class="item"></div>
+    </div>
+
+    <div class="item_American_job">
+        <a href="page1.html">
+            <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img >
+            <p class="web_words">American job</p>
         </a>
-        <div class="container">
-            <a href="page1.html" class="item-link">
-            <div class="item"></div>
+    </div>
+
+    <div class="item_movie">
+        <a href="https://github.com/ArinaChen?tab=projects">
+            <img class="web_image" src="file:///Users/fishdouble/Downloads/Fts1-2.jpeg"></img >
+            <p class="web_words">Movie</p>
         </a>
-        </div>
-</div>
-        <div class="profile-info">
-            <img src="profile.jpg" alt="personal image" width="195" height="205" style="position: absolute;">  
-            <p><strong>Hello, Welcome to my blog!</strong></p>
-            <p>My name is Arina. I love exploring new opportunities and pushing myself beyond my comfort zone.</p>
-            <p>Currently, I'm pursuing a Master's degree in Business Analytics at Arizona State University in the USA.</p>
-            <p>This space will serve as a record of my academic research and life here in the U.S.</p>
-            <p>If you have any questions or suggestions, feel free to reach out. I'd love to connect!</p>
-        </div>
-</div>
+    </div>
+
+    <div class="profile-info">  
+         <img src="profile.jpg" alt="personal image" width="195" height="205">  
+         <p><strong>Hello, Welcome to my blog!</strong></p>
+         <p>My name is Arina. I love exploring new opportunities and pushing myself beyond my comfort zone.</p>
+         <p>Currently, I'm pursuing a Master's degree in Business Analytics at Arizona State University in the USA.</p>
+         <p>This space will serve as a record of my academic research and life here in the U.S.</p>
+         <p>If you have any questions or suggestions, feel free to reach out. I'd love to connect!</p>
+    </div>
+    
     
 </body>
 </html>
