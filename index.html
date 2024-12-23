@@ -22,7 +22,7 @@
         p {
             color: #010000; /* 設定段落文字顏色 */
             font-size: 17px; /* 設定段落文字大小 */
-            max-width: 250px; /* limit the width of block */
+            max-width: 270px; /* limit the width of block */
             text-align: justify;
             line-height: 1.4;
         }
@@ -38,8 +38,7 @@
             width:400px; 
             height: 300px;
             border: 1px solid #ccc;
-            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
+            border-radius: 10px;
             position: absolute;
             top: 180px;
             left: 120px;
@@ -48,39 +47,35 @@
             width:400px; 
             height: 300px;
             border: 1px solid #ccc;
-            background-color: #9ea2ab;
             border-radius: 10px;
             position: absolute;
             top: 180px;
             left: 600px;
         }
         .item_movie:hover{
-            background: color #ffcc71;
+            background: color #f1cc8b;
         }
-        .item_American_job {
-    width: 900px;
-    height: 300px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-    padding: 20px;
-    position: absolute;
-    top: 550px;
-    left: 120px;
-    display: flex;
-    align-items: center;  /* This centers the text vertically */
-    justify-content: center;  /* This centers the text horizontally */
-}
+        .item_American_job{
+            width:80px; 
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: absolute;
+            top: 550px;
+            left: 120px;
+        }
+        .web_image{
+            width: 400px;
+            height : 250px;
+            border-radius: 8px;
 
-.web_image {
-    width: 400px;
-    height : 250px;
-    border-radius: 8px;
-}
-
-.web_words {
-    font-size: 18px;
-    text-align: center;
-}
+        }
+        .web_words {
+            font-size: 25px;
+            position: absolute;
+            margin-top:10px;
+            margin-left:30%;
+        }
     </style>
 </head>
 <body>
@@ -111,24 +106,20 @@
             <p class="web_words">American Life</p>
         </a>
     </div>
-    <div class="item_movie">
-        <a href="page1.html">
-            <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img >
-            <p class="web_words">Movie</p>
-        </a>
-    </div>
+    
+    <a href="page1.html">
+        <div class="item_movie">
+            <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                <p class="web_words">Movie Theater</p>
+            </img >
+        </div>
+    </a>
+    
 
     <div class="item_American_job">
         <a href="page1.html">
             <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img >
-            <p class="web_words">American job</p>
-        </a>
-    </div>
-
-    <div class="item_movie">
-        <a href="https://github.com/ArinaChen?tab=projects">
-            <img class="web_image" src="person_at_airport_holding_coffee_and_luggage-2 copy.jpg"></img >
-            <p class="web_words">Movie</p>
+            <p class="web_words">American Job</p>
         </a>
     </div>
 
