@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arina's Movie</title>  <!relate to search SEO>
+    <style>
+        h1 {
+                color: #000000; /* 設定標題文字顏色 */
+                text-align: center; /* 文字置中 */
+                font-size: 50px;
+            }
+        .Netflix{
+            width:400px; 
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: absolute;
+            top: 180px;
+            left: 120px;
+        }
+        .web_image{
+            width: 400px;
+            height : 250px;
+            border-radius: 8px;
+
+        }
+        .web_words {
+            font-size: 25px;
+            text-align: center;  /* 确保文字水平居中 */
+            width: 100%;  /* 确保文字容器宽度与其父容器相同 */
+            position: absolute;  /* 使用绝对定位来居中文字 */
+            transform: translateY(-50%);  /* 精确调整到正中心 */
+            left: 0;  /* 从最左边开始 */
+        }
+        .web_content {
+            font-size: 20px;
+            text-align: center;  /* 确保文字水平居中 */
+            width: 90%;  /* 确保文字容器宽度与其父容器相同 */
+            padding : 20px; 
+            position: absolute;  /* 使用绝对定位来居中文字 */
+            text-align: justify;
+            transform: translateY(-50%);  /* 精确调整到正中心 */
+            left: 00;  /* 从最左边开始 */
+            top: 390px;
+        }
+    </style>
+</head>
+<body>
+    <a href="try.html" class="my-button">
+        <img src="file:///Users/fishdouble/Downloads/IMG_1858-2.jpg" alt="personal image" width="120" height="110" style="position: absolute; top: -10px; left: 20px;"></img >
+    </a>
+    <h1 style="position: absolute; top: -10px; right: 550px;">Movie Theater</h1>
+    <p style="position: absolute; top: 50px; right: 100px;"> <strong>Hello, Welcome to my blog!</strong> <br>
+        </p>
+    <div class="Netflix">
+        <a href="page1.html">
+            <img class="web_image" src="person_at_airport_holding_coffee_and_luggage-2 copy.jpg"></img >
+            <p class="web_words">4個Netflix學習影集</p>
+            <p class="web_content">
+                My name is Arina. I love exploring new opportunities and pushing myself beyond my comfort zone.
+                Currently, I'm pursuing a Master's degree in Business Analytics at Arizona State University in the USA.
+                This space will serve as a record of my academic research and life here in the U.S.
+                If you have any questions or suggestions, feel free to reach out. I'd love to connect!
+            </p>
+        </a>
+    </div>
+</body>
+</html>
