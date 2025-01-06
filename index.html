@@ -19,13 +19,7 @@
             text-align: center; /* 文字置中 */
             font-size: 70px;
         }
-        p {
-            color: #010000; /* 設定段落文字顏色 */
-            font-size: 17px; /* 設定段落文字大小 */
-            max-width: 250px; /* limit the width of block */
-            text-align: justify;
-            line-height: 1.4;
-        }
+        
         .profile-info{
             border: 1px solid #ccc;
             box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
@@ -33,6 +27,20 @@
             position: absolute;
             top: 180px;
             right: 120px;
+        }
+        .profile-img{
+            width: 195px;
+            height: 205px;
+            margin: 0 auto; /* 讓圖片水平居中 */
+            display: block;  /* 从最左边开始 */
+        }
+        p {
+            color: #010000; /* 設定段落文字顏色 */
+            font-size: 17px; /* 設定段落文字大小 */
+            max-width: 250px; /* 限制段落的最大寬度 */
+            text-align: justify; /* 文字對齊 */
+            line-height: 1.6; /* 增加行間距讓閱讀更舒適 */
+            margin-top: 20px; /* 與圖片保持一定距離 */
         }
         .item_American_Life{
             width:400px; 
@@ -56,13 +64,22 @@
             background: color #f1cc8b;
         }
         .item_American_job{
-            width: 860px;
+            width:400px; 
             height: 300px;
             border: 1px solid #ccc;
             border-radius: 10px;
             position: absolute;
-            top: 550px;  /* Adjusted for centering */
-            left: 120px; /* Adjusted for centering */
+            top: 550px;
+            left: 120px;
+        }
+        .resume{
+            width:400px; 
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: absolute;
+            top: 550px;
+            left: 580px;
         }
         .web_image{
             width: 400px;
@@ -76,7 +93,8 @@
             width: 100%;  /* 确保文字容器宽度与其父容器相同 */
             position: absolute;  /* 使用绝对定位来居中文字 */
             transform: translateY(-50%);  /* 精确调整到正中心 */
-            left: 0;  /* 从最左边开始 */
+            top: 250px;
+            left: 65px;  /* 从最左边开始 */
     </style>
 </head>
 <body>
@@ -125,13 +143,22 @@
         </a>
     </div>
 
+
+    <div class="resume"></div>
+        <a href="resume.html">
+            <img class="web_image" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img >
+            <p class="web_words">professional profile</p>
+        </a>
+    </div>
+
+
     <div class="profile-info">  
-         <img src="profile.jpg" alt="personal image" width="195" height="205">  
-         <p><strong>Hello, Welcome to my blog!</strong></p>
-         <p>My name is Arina. I love exploring new opportunities and pushing myself beyond my comfort zone.</p>
-         <p>Currently, I'm pursuing a Master's degree in Business Analytics at Arizona State University in the USA.</p>
-         <p>This space will serve as a record of my academic research and life here in the U.S.</p>
-         <p>If you have any questions or suggestions, feel free to reach out. I'd love to connect!</p>
+         <img class="profile-img" src="profile.jpg">  
+            <p><strong>Hello, Welcome to my blog!</strong></p>
+            <p>My name is Arina. I love exploring new opportunities and pushing myself beyond my comfort zone. Currently, I'm pursuing a Master's degree in Business Analytics at Arizona State University in the USA. This space will serve as a record of my academic research and life here in the U.S. If you have any questions or suggestions, feel free to reach out. I'd love to connect!</p>
+            <p><strong>歡迎來到我的部落格！</strong></p>
+            <p>我喜歡探索新的機會並推動自己超越自己的舒適圈，目前我正在美國亞利桑那州立大學攻讀商業分析碩士學位，這個空間將作為我在美國的學術研究和生活的記錄，如果您有任何問題或建議，歡迎隨時與我聯絡！</p>
+        </img >
     </div>
     
     
