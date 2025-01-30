@@ -683,7 +683,9 @@ $size-header-pad: 4em;
 		}
 
 		&.avatar {
+			display: block;
 			border-radius: 100%;
+			width: 500px;
 
 			&:before {
 				display: none;
