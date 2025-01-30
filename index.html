@@ -1,148 +1,463 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primary Menu</title>  <!relate to search SEO>
-    <style>
-        body {
-            background-color: #ffffff; /* 設定頁面背景顏色 */
-            font-family: 'Times New Roman', Times, serif; /* 設定字體 */
-            margin: 200px; /* 移除預設邊距 */
-            height: 500px; /* 讓 body 佔滿整個視窗高度 */
-            display: flex; /* 啟用 Flexbox */
-            justify-content: center; /* 水平置中 */
-            align-items: center; /* 垂直置中 */
-        }
-        h1 {
-            color: #000000; /* 設定標題文字顏色 */
-            text-align: center; /* 文字置中 */
-            font-size: 70px;
-        }
-        
-        .profile-info{
-            border: 1px solid #ccc;
-            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-            position: absolute;
-            top: 180px;
-            right: 120px;
-        }
-        .profile-img{
-            width: 205px;
-            height: 205px;
-            margin: 0 auto; /* 讓圖片水平居中 */
-            display: block;  /* 从最左边开始 */
-        }
-        p {
-            color: #010000; /* 設定段落文字顏色 */
-            font-size: 17px; /* 設定段落文字大小 */
-            max-width: 250px; /* 限制段落的最大寬度 */
-            text-align: justify; /* 文字對齊 */
-            line-height: 1.6; /* 增加行間距讓閱讀更舒適 */
-            margin-top: 20px; /* 與圖片保持一定距離 */
-        }
-        .item_American_Life{
-            width:400px; 
-            height: 300px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            position: absolute;
-            top: 180px;
-            left: 120px;
-        }
-        .item_movie{
-            width:400px; 
-            height: 300px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            position: absolute;
-            top: 180px;
-            left: 580px;
-        }
-        .item_movie:hover{
-            background: color #f1cc8b;
-        }
-        .resume{
-            width:400px; 
-            height: 300px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            position: absolute;
-            top: 550px;
-            left: 120px;
-        }
-        .web_image{
-            width: 400px;
-            height : 250px;
-            border-radius: 8px;
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Strata by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-        }
-        .web_words {
-            font-size: 25px;
-            text-align: center;  /* 确保文字水平居中 */
-            width: 100%;  /* 确保文字容器宽度与其父容器相同 */
-            position: absolute;  /* 使用绝对定位来居中文字 */
-            transform: translateY(-50%);  /* 精确调整到正中心 */
-            top: 250px;
-            left: 65px;  /* 从最左边开始 */
-    </style>
-</head>
-<body>
-    <h1 style="position: absolute; top: -30px; right: 525px;">QuirkWorks</h1>
-    <img src="picture/mainP/QuirkWorks.jpeg" alt="personal image" width="100" height="75" style="position: absolute; top: 5px; left: 20px;"></img >
-    
-    <! YouTube button>
-    <a href="https://youtube.com/@arina5933?si=Ge4WdDhq5QW85_Lw"> 
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-icon.png" alt="youtube" width="25" height="25" style="position: absolute; top: 109px; right: 770px;"></img >
-    </a>
-    
-    <! Instagram button>
-    <a href="https://www.instagram.com/double__fish_?igsh=MWt5ZWxmbmw0YXN0aw%3D%3D&utm_source=qr"> 
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-logo-icon-download-in-svg-png-gif-file-formats--share-image-chat-social-media-pack-logos-icons-1466166.png?f=webp&w=256" alt="Instagram"  width="28" height="28" style="position: absolute; top: 106px; right: 730px;"></img >
-    </a>
-    
-    <! linkedin button>
-    <a href="https://www.linkedin.com/in/arina-chen"> 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDlMpBjQb08mtxF-BzjCoxcoCkgPEUi7P4eA&s" alt="linkedin" width="25" height="25" style="position: absolute; top: 108px; right:690px;"></img >
-    </a>
-    <! GitHub button>
-    <a href="https://github.com/ArinaChen?tab=projects"> 
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="23" height="23" style="position: absolute; top:108px; right: 650px;"></img >
-    </a>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>I am Strata</strong>, a super simple<br />
+					responsive site template freebie<br />
+					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+				</div>
+			</header>
 
-    <div class="item_American_Life">
-        <a href="American_life.html">
-            <img class="web_image" src="picture/mainP/AL.jpg"></img >
-            <p class="web_words">American Life</p>
-        </a>
-    </div>
-    
-    <a href="movie_theater.html">
-        <div class="item_movie">
-            <img class="web_image" src="picture/mainP/movie-book.png">
-                <p class="web_words">Movie Theater</p>
-            </img >
-        </div>
-    </a>
-    
+		<!-- Main -->
+			<div id="main">
 
-    <div class="resume">
-        <a href="page1.html">
-            <img class="web_image" src="picture/mainP/PP.png"></img >
-            <p class="web_words">professional profile</p>
-        </a>
-    </div>
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Ipsum lorem dolor aliquam ante commodo<br />
+							magna sed accumsan arcu neque.</h2>
+						</header>
+						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</section>
 
-    <div class="profile-info">  
-         <img class="profile-img" src="picture/mainP/personal.png">  
-            <p><strong>Hello, Welcome to my blog!</strong></p>
-            <p>My name is Arina. I love exploring new opportunities and pushing myself beyond my comfort zone. Currently, I'm pursuing a Master's degree in Business Analytics at Arizona State University in the USA. This space will serve as a record of my academic research and life here in the U.S. If you have any questions or suggestions, feel free to reach out. I'd love to connect!</p>
-            <p><strong>歡迎來到我的部落格！</strong></p>
-            <p>我喜歡探索新的機會並推動自己超越自己的舒適圈，目前我正在美國亞利桑那州立大學攻讀商業分析碩士學位，這個空間將作為我在美國的學術研究和生活的記錄，如果您有任何問題或建議，歡迎隨時與我聯絡！</p>
-        </img >
-    </div>
-    
-    
-</body>
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										1234 Somewhere Rd.<br />
+										Nashville, TN 00000<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">hello@untitled.tld</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
